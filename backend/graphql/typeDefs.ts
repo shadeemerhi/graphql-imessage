@@ -20,6 +20,10 @@ const typeDefs = gql`
   type Mutation {
     addPost(post: NewPostInput!): [Post]
   }
+
+  type Subscription {
+    newPostAdded(postId: ID!): Post
+  }
 `;
 
 export default typeDefs;
