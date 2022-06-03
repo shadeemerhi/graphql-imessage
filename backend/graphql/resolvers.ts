@@ -38,6 +38,10 @@ const resolvers = {
       return posts;
     },
   },
+
+  // Subscriptions: {
+  //   newPostAdded: (_: any, postId: string): Post => {}
+  // }
 };
 
 export default resolvers;
